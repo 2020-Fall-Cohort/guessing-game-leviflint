@@ -9,7 +9,7 @@ public class GuessingGameApp {
         if (guess == 7) {
             System.out.println("You win!");
         } else if (guess == 0) {
-            System.out.println("Please restart this game and only choose a number between 1 - 10");
+            System.out.println("Only choose a number between 1 - 10");
         } else {
             System.out.println("Incorrect, you have one more guess");
         }
