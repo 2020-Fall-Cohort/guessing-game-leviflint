@@ -6,12 +6,19 @@ public class GuessingGameApp {
         Scanner input = new Scanner(System.in);
         System.out.println("Please guess a number between 1 - 10:");
         int guess = input.nextInt();
-        if (guess == 7){
+        if (guess == 7) {
             System.out.println("You win!");
-        } else if (guess == 0){
+        } else if (guess == 0) {
             System.out.println("Please restart this game and only choose a number between 1 - 10");
         } else {
-            System.out.println("You lose!");
+            System.out.println("Incorrect, you have one more guess");
+        }
+        int guess2 = input.nextInt();
+        if (guess2 == 7 || guess2 == 7) {
+            System.out.println("You win!");
+        } else {
+            System.out.println("You lose.. Sorry Charlie");
         }
     }
 }
+
