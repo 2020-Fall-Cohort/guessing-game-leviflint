@@ -8,13 +8,15 @@ public class GuessingGameApp {
         int guess = input.nextInt();
         if (guess == 7) {
             System.out.println("You win!");
+        } else if (guess == -1){
+            System.exit(0);
         } else if (guess == 0) {
             System.out.println("Only choose a number between 1 - 10");
         } else {
             System.out.println("Incorrect, you have one more guess");
         }
         int guess2 = input.nextInt();
-        if (guess2 == 7 || guess2 == 7) {
+        if (guess2 == 7) {
             System.out.println("You win!");
         } else {
             System.out.println("You lose.. Sorry Charlie");
