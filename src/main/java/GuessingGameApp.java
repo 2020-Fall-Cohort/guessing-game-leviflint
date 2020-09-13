@@ -12,6 +12,10 @@ public class GuessingGameApp {
             System.exit(0);
         } else if (guess == 0) {
             System.out.println("Only choose a number between 1 - 10");
+        } else if (guess < 7){
+            System.out.println("The correct number is higher! You have one more guess.");
+        } else if (guess > 7){
+            System.out.println("The correct number is lower! You have one more guess.");
         } else {
             System.out.println("Incorrect, you have one more guess");
         }
